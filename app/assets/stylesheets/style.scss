@@ -1,0 +1,655 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------rest ----------*/
+
+body {
+background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'titi-regular', "Trebuchet MS", sans-serif;
+    color: #7e7e7e;
+    margin: 0;
+    padding: 0;
+    border-top: 4px solid #00cbcb;
+    padding-top: 24px;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #0d0d0d;
+    height: 126px;
+}
+
+#logo {
+    width: 300px;
+    /*padding: 28px 0 0 35px;*/
+    float: left;
+    background-color: #0d0d0d;
+    position: absolute;
+}
+
+#menu {
+    float: right;
+    height: 100%;
+    background-color: #0d0d0d;
+    display: inline-bloc;
+    /*position: absolute;*/
+}
+#menu ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+#menu ul li:hover, #menu ul li.active {
+    background-color: #000;
+}
+
+#menu ul li {
+
+    float: left;
+    height: 126px;
+    width: 115px;
+    border-left: 1px solid #181818;
+    border-right: 1px solid #070707;
+}
+
+#menu ul li a { /* element du menu les titre */
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #58585a;
+    font-family: 'titi-bold', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    display: block;
+    /*padding: 96px 38px 0;*/
+    /*padding-top: 96px;*/
+    text-align: center;
+    height: 100%;
+    line-height: 196px;
+    margin-bottom: 20%;
+}
+#menu ul li ul.sub {
+    display: none;
+    z-index: 9999;
+    position: relative;
+    overflow: hidden;
+    height: 508px;
+    top: 0px;
+}
+
+.wrap {
+    font-size: 100%;
+    background: #1A1A1A;
+    /*clear: both;*/
+    padding: 70px;
+}
+
+.intro {
+    font-family: "avant-garde", sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    background: #1A1A1A;
+    line-height: 0.8em;
+    background-position: 50% 50%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+.intro2 {
+    font-family: "avant-garde", sans-serif;
+    font-weight: normal;
+    font-size: 4em;
+    background: #1A1A1A;
+    line-height: 0.8em;
+    background-position: 50% 50%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+#title {
+    font-size: 3em;
+    color: #c04c49;
+
+}
+
+.projet {
+    /*float: left;*/
+    margin-right: 4%;
+
+}
+
+.visuel {
+    float: right;
+    margin-top: 3em;
+    margin-bottom: 3%;
+}
+
+#chapeau { /* ------------ chapeau pr les projets ----*/
+    font-family: "titi-thin", sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    padding-bottom: 10px;
+    line-height: 1.2em;
+    text-align: left;
+    color: white;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+.flashy {
+    color: #20fa96;
+
+}
+.row2 {
+    margin-top: 5%;
+}
+#bio { /* encart de presentation sur trois colonne */
+
+    background-color: #1A1A1A;
+    padding: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#bloc { /* bloc presentation dans le bloc bio */
+    /*border-top: 4px solid #00cbcb;*/
+    width: 28%;
+    padding: 30px;
+    margin-right: 5%;
+    text-align: center;
+    text-align: justify;
+    /*display: inline-block;*/
+}
+
+#bloc a hover { /* bloc presentation dans le bloc bio */
+    border-top: 4px solid #00cbcb;
+    background-color: #c04c49;
+   
+}
+
+p { /* txte interne */
+    color: #979798!important;
+    font-family: 'titi-bold', sans-serif;
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 0.9em !important;
+    line-height: 1.7em;
+   
+}
+
+
+h2 {
+    font-family: 'titi-bold', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+    text-align: center;
+    color: #373737; 
+}
+
+.cartoucherose { /* span pr l'encart vert fluo des h2 first section */
+    background-color: #c04c49;
+    padding: 2%;
+}
+
+.cartouchepink { /* span pr l'encart vert fluo des h2 first section */
+    background-color: #de6764;
+    padding: 2%;
+}
+
+.cartouchegray { /* span pr l'encart vert fluo des h2 first section */
+    background-color: #f38381;
+    padding: 2%;
+}
+
+.infos { /*----- 3 blocs infos -----*/
+   background-color: #1A1A1A;
+
+}
+
+#perso { /* encart de presentation sur trois colonne */
+
+    background: transparent;
+    /*padding: 30px;*/
+    overflow: hidden;
+    /*margin-bottom: 35px;*/
+}
+
+h3 {
+    color: #c04c49 !important;
+    text-align: center;
+}
+
+#conteneur_footer {
+    /*padding: 0 10px;*/
+    margin-bottom: 60px;
+    overflow: hidden; 
+    margin-top: 3%;
+}
+
+.banner_footer {
+    background-color: #0d0d0d;
+    height: 50px;
+    text-align: center;
+}
+
+.footer {
+    background: #1A1A1A;
+    height: 100px;
+}
+
+.footer ul {
+    margin-top: 10%;
+}
+
+.footer ul li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #c04c49!important;
+    font-size: 0.9em;
+}
+
+.bloc_footer {
+    width: 27%;
+    padding: 1% 3%;
+    float: left;
+    overflow: hidden;
+}
+
+ul#menu_footer {
+    padding: 0;
+    margin-top: 10%;
+    list-style: none;
+    font-size: 1em;
+    text-decoration: none;
+    float: right;
+    padding-right: 30%;
+}
+
+ul#menu_footer a {
+    color: #c04c49;
+}
+
+ul#menu_footer li {
+    display: inline;
+}
+
+ul#reseaux_footer {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    list-style: none;
+    overflow: hidden;
+}
+
+/* /////////////////////////////// tri ////////////////////////////////////////////////////*/
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50%;
+}
+ 
+.clear {
+   clear: both;
+}
+ 
+.wrapper .tri {
+    margin-bottom: 40px; /* On ne veut pas que le menu touche les items du portfolio ! */
+    background: black;
+}
+ 
+.portfolio .tri ul {
+    display: table; /* Le display table me permet de centrer mon menu avec margin: 0 auto; sans avoir besoin de préciser de taille ! */
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #0d0d0d;
+    padding: 0 2em;
+    box-sizing: border-box; /* On change le mode d'affichage, afin de ne pas avoir à faire des calculs dingues à chaque fois que l'on ajoute du padding */
+}
+ 
+.portfolio .tri ul li {
+    float: left; /* Tous mes éléments de menu sont en float left pour pouvoir les mettre l'un à côté de l'autre. */
+    color: #aaa;
+    cursor: pointer; /* Permet de changer l'icône de la souris, ça indique à l'utilisateur qu'il y a une action à faire ! */
+    font-size: 14px;
+    padding: 1em;
+    transition: all .2s ease-in-out; /* Les transitions permettent d'ajouter de la fluidité à un changement de propriété : Ici je dis que chaque élément prend 0,2s de easing en début et en fin d'animation, et ce sur TOUS les changements. */
+    -moz-transition: all .2s ease-in-out; /* À décliner pour tous les navigateurs. */
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    font-weight: 300; /* Ma typo aura une graisse "light" (100 = thin, 300 = light, 400 = regular, 500 = semi bold, 600 = bold, 900 = black habituellement) */
+    letter-spacing: 3px; /* J'espace chaque lettre, pour le style que j'ai choisis. */
+    text-transform: uppercase; /* Chaque élément est en majuscule */
+    border-top: 1px solid transparent; /* Ligne importante pour l'animation d'après : Au statut actif (quand sélectionné) on va ajouter un border top de 1px, et sans cette ligne, à l'activation la hauteur de ton menu va augmenter de 1 pixel, ce qui fera bouger tout le menu. */
+    margin-top: -1px; /* Et pour remettre mon menu là où il devrait être sans cette bordure, je le remonte de 1 pixel. */
+}
+ 
+.portfolio .tri ul li:hover {
+    color: #888;
+}
+ 
+.portfolio .tri ul li.active {
+    color: rgb(27,163,156);
+    border-top: 1px solid rgba(27,163,156,.6); /* Ma fameuse bordure : Grâce aux transitions sur le li, cette bordure apparaitra en 0,2s avec un effet d'easing. De même, elle disparaitra avec le même easing (ease-in-out veut dire en entrée et en sortie). */
+}
+
+/* --------------------------  LES ITEMS DU PORTFOLIO -----------------------------*/
+
+.portfolio .item {
+    width: 23%; /* On ne met pas 50% afin de créer un espace de 2% de chaque côté (rappel : 2 colonnes, donc 2% sur la colonne de gauche et 2% sur la colonne de droite). */
+    display: block; /* Comme les items sont des ancres à la base (qui sont de type inline), il faut les transformer en block pour manipuler leur positionnement. */
+    color: #fff;
+    box-sizing: border-box;
+    padding: 1em;
+    margin-right: 1.3em;
+    position: relative; /* La position relative permet de dire que les éléments suivants devront se placer par rapport à celui ci. On transforme .item en référence pour les prochains éléments qui seront en position absolute. */
+    height: 300px;
+    overflow: hidden; /* Grâce à cette ligne, on évite les débordements, et surtout on cache l'état 0 des animations. */
+    cursor: pointer;
+    margin-bottom: 20px;
+    /*border: 3px solid #fff;*/ /* ici border de chque bloc du portfolio */
+    box-shadow: 0 0 10px rgba(0,0,0,.2); /* Permet d'ajouter une ombre portée légère, les paramètres dans l'ordre sont : x, y, portée, couleur. */
+    transition: all .2s ease-in-out; /* Comme pour le menu, on ajoute la transition pour créer un easing sur nos animations. */
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    text-decoration: none; /* On se débarasse des vilains soulignements tout moches ! */
+}
+ 
+/* Ici les SUITES MATHÉMATHIQUES ! : Explication :
+On peut utiliser des sélecteurs comme :first-child, :last-child, :nth-child(2), etc..
+Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce aux suites mathématiques, il est possible de créer une constance.
+:nth-child(xn + y) : n est en fait un compteur qui va s'incrémenter (0, 1, 2, 3, etc..). On peut ainsi créer une formule de math : Il est important de visualiser ce que tu veux faire ! Nous on est partis sur 2 colonnes, et je vais cibler les .item tous les 2n (0, 2, 4, 6, 8, etc.. Tous les chiffres pairs) */
+ 
+.portfolio .item:nth-child(2n) {
+    float: left; /* Je met un float right sur tous les .item pairs pour les mettre à droite */
+}
+ 
+/* Et à l'inverse, un float left sur tous les .items impairs (2n+1 : 1, 3, 5, 7, etc...) */
+.portfolio .item:nth-child(2n+1) {
+    float: left;
+}
+ 
+/* Et voilà ! Notre grille est déjà faite, c'est magique, non?  */
+ 
+.portfolio .item .black-overlay {
+    position: absolute; /* Permet de placer l'overlay par rapport au premier parent en position relative, .item donc. */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; /* Les 4 lignes left, right, top et bottom ici permettent de dire à l'élément de se coller au bord à gauche, à droite, en haut et en bas : Il prend donc 100% de la largeur et de la hauteur de son parent automatiquement ! */
+    height: 300px;
+    z-index: -1; /* z-index permet de créer des "calques" : De base à 0, ici on recule ce calque car le prochain calque sera le texte, qui ne doit pas être affecté par l'overlay. */
+    background: rgba(27,163,156,0.65); /* La couleur de notre overlay, j'ai appelé la classe ".black-overlay" mais elle n'est pas de couleur noire, my bad ! */
+    opacity: 0; /* Et de base, l'overlay n'est pas affichée. Elle sert uniquement à l'animation. */
+}
+ 
+.portfolio .item:hover .black-overlay {
+    opacity: 1; /* Justement : On active l'overlay au passage de la souris. */
+}
+ 
+.portfolio .item .hr-title-top {
+    width: 0%; /* De base, nos séparateurs ne doivent pas être affichés. Comme mon animation est de les faire apparaître progressivement (de la gauche vers la droite), je vais jouer sur la propriété "width", pour donner un effet de trait qui se dessine. */
+    height: 1px;
+    background: #fff;
+    border: none;
+    margin: 0; /* On remet à zéro le margin avant de le manipuler plus bas */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: all .4s ease-in-out; /* On leur applique à nouveau les transitions pour appliquer le easing. Note qu'ici j'ai mis 0,4s plutôt que 0,2 : C'est pour donner un effet de délai entre les différentes animations. */
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+ 
+/* Celui ci est similaire au précédent, je ne le commenterais pas. J'ai juste changé les margins pour qu'ils soient en accord avec leur position. */
+.portfolio .item .hr-title-bot {
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    border: none;
+    margin: 0;
+    margin-top: 20px;
+    display: block;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+ 
+.portfolio .item:hover .hr-title-top, .portfolio .item:hover .hr-title-bot {
+    width: 20%; /* Et ici on règle la largeur finale de ces traits lorsqu'ils se dessineront. L'élément le plus important du sélecteur c'est le ".item:hover" : Ce dernier dit à notre CSS de s'activer uniquement lorsqu'on passe la souris sur ".item". */
+}
+ 
+.portfolio .item .background {
+    background-size: cover; /* Ici on dit que l'image doit s'adapter à la div "background" automatiquement. */
+    background-position: center center; /* Si l'image est trop grande, elle se placera au milieu de la div automatiquement */
+    position: absolute; /* On place la div qui contient l'image en position absolute afin de lui donner une position en faisant référence à la div parente (".item") */
+    left: 0;
+    top: 0; /* On place la div en haut à gauche */
+    width: 100%; /* On dit que la div fait la taille du parent (".item") en largeur */
+    z-index: -2; /* On place la div en dessous de l'overlay (donc l'overlay de couleur sera au dessus de l'image, et le texte sera au dessus de l'overlay) */
+    height: 300px;
+    transform: scale(1); /* La transformation "scale" permet de créer un effet de zoom. Par défaut elle est à 1. On initialise donc l'animation avec l'état de base. */
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: all .2s ease-in-out; /* Et la fameuse transition, toujours ! */
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+ 
+.portfolio .item:hover .background {
+    transform: scale(1.5); /* L'animation qui fait que l'image zoom au passage de la souris. */
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+}
+ 
+.portfolio .item .item-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative; /* On place notre titre en position relative afin de pouvoir le déplacer par rapport à son parent ('.item'). */
+    top: 100px; /* Notre titre possède un effet qui apparait du bas vers le haut, pour ça, de base on place notre titre plus bas que prévu. */
+    line-height: 1.3em;
+    transition: all .2s ease-in-out; /* Et on prévoit l'animation. */
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;    
+    -webkit-transition: all .2s ease-in-out;
+    opacity: 0; /* De base, il n'est pas affiché du tout, en opacité à 0% : Grâce à ça on va pouvoir le faire apparaitre progressivement également. */
+}
+ 
+.portfolio .item:hover .item-title {
+    top: 0; /* A la fin de l'animation, le titre sera à top: 0. */
+    opacity: 1; /* Et on lui donne l'opacité à la fin de l'animation (En fait, en 0,2s, l'animation sera passée de 0% à 100% d'opacité : D'où l'effet de easing qui calcule les pas intermédiaires tout seul). */
+}
+ 
+/* De même pour la description, on va la faire apparaître de la droite vers la gauche. Le principe est exactement le même ! */
+ 
+.portfolio .item .item-description {
+    line-height: 1.5em;
+    position: relative;
+    left: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-shadow: 0 0 5px rgba(0,0,0,.4);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    opacity: 0;
+}
+ 
+.portfolio .item:hover .item-description {
+   opacity: 1;
+   left: 0;
+}
+ 
+.portfolio .item .view-more {
+    /* Ici c'est que du style "graphique", rien concernant l'animation ou le positionnement encore. */
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 1em 0;
+    cursor: pointer;
+    width: 150px;
+    
+    /* Petit trick ici : Je veux qu'il soit au milieu de ma box, pour ça : position absolute, left 50%, et le décaler de -(sa largeur / 2) : -150/2 = -75. */
+    /* La box doit être en position relative pour que ça fonctionne. */
+    position: absolute;
+    left: 50%;
+    bottom: 0px; /* Animation : Le bouton apparaît du bas vers le haut, donc de base il est au bord du bas. */
+    background: transparent; /* De base, le bouton n'a pas de background. C'est juste du texte et une bordure. */
+    margin-left: -75px;
+    text-align: center;
+    transition: all .2s ease-in-out; /* On prépare l'animation. */
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    opacity: 0; /* Animation : De base, le bouton est à 0% d'opacité. */
+}
+ 
+.portfolio .item .view-more:hover {
+   background: #fff;
+   color: #000; /* Au hover du bouton, je veux que le background devienne blanc, et le texte noir. Ca profite aussi du easing ! */
+}
+ 
+.portfolio .item:hover .view-more {
+    opacity: 1;
+    bottom: 20px; /* A la fin de l'animation, le bouton est à 20px du bord et il est à 100% d'opacité. */
+}
+
+/* --------------------------------------- jquery ---------------------------*/
+
+/* "sortedDown" sera utilisée quand notre item sera minimisé. La taille de l'élément sera réduit de 50% et il passera à 80% en noir et blanc.
+*/
+.sortedDown {
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    filter: grayscale(.8); /* Filtre qui permet de rajouter un effet noir et blanc. */
+    -webkit-filter: grayscale(.8);
+}
+
+/* ///////////////////////////////// media smartphone ////////////////////////////////////////////
+///////////////////////////////////                  ///////////////////////////////////////////*/
+
+
+@media all and (min-width: 320px) and (max-width: 700px) {
+
+
+#logo {
+    display: none;
+}
+
+#menu {
+
+    float: none;
+    display: inline;
+}
+
+#menu ul li {
+
+    width: 70px;
+
+}
+
+.infos {
+    margin: 2%;
+
+   
+}
+.intro2 {
+    margin-left: -10%;
+}
+
+.portfolio .item {
+    width: 21%; /* On ne met pas 50% afin de créer un espace de 2% de chaque côté (rappel : 2 colonnes, donc 2% sur la colonne de gauche et 2% sur la colonne de droite). */
+    margin-right: 1.1em;
+
+
+
+
+
+
+
+

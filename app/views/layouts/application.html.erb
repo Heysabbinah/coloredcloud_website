@@ -7,7 +7,37 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
 
+    <!-- ///////////////////////////// container header ////////////////// -->
+
+    <div class="row">
+         <div class="col-md-12 col-sm-10 col-xs-12 header">
+
+            <div id="logo">
+                    <a href="">
+                       <img src="img/logo.png" title="materiels" alt="les materiel"></img> 
+                <!-- ici je peux mettre une autre version du logo pr le format portrait un logo vertical -->
+                    </a>
+                </div><!-- #logo -->
+
+            <div id="menu">
+                <nav class="navbar navbar-default">
+                    <ul>
+                        <li class="active"><a href="index.html" id="home">Home</a></li>
+                        <li><a href="projets.html" id="projets">Projets</a></li>
+                        <li><a href="contact.html" id="contact">Contact</a></li>
+                       <li>
+                            <a href="#" id="reseaux">Social</a>
+                            <ul class="sub">
+                                <li><a href="" target="_blank" id="twitter"></a></li>
+                            </ul>                               
+                        </li>
+                    </ul>
+                </nav>
+             </div><!-- #menu -->
+        </div><!-- #header -->
+    </div><!-- #row-->
 <%= yield %>
 
 </body>

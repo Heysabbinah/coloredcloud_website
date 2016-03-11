@@ -29,7 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 # Uploader 
 gem 'carrierwave'
-gem 'rmagick'
+# gem 'rmagick'
 # Fancy form
 gem 'bootstrap_form'
 # Css & Js library
