@@ -126,13 +126,20 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     height: 508px;
     top: 0px;
 }
-
 .wrap {
     font-size: 100%;
     background: #1A1A1A;
     /*clear: both;*/
-    padding: 70px;
+    padding: 30px;
 }
+
+.wrappro {
+    /*clear: both;*/
+    height: 300px;
+    background-image: url(../img/simplon-banner.jpg);
+    background-repeat: no-repeat;
+}
+
 
 .intro {
     font-family: "avant-garde", sans-serif;
@@ -614,7 +621,7 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
 ///////////////////////////////////                  ///////////////////////////////////////////*/
 
 
-@media all and (min-width: 320px) and (max-width: 700px) {
+@media all and (min-width: 320px) and (max-width: 801px) {
 
 
 #logo {
@@ -635,22 +642,28 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
 
 .infos {
     margin: 2%;
-
-   
+  
 }
+.intro {
+    font-size: 2.2em;
+    line-height: 0.8em; 
+    letter-spacing: -2px;
+    
+}
+
 .intro2 {
-    margin-left: -10%;
+    margin-left: -5%;
 }
 
 .portfolio .item {
     width: 21%; /* On ne met pas 50% afin de créer un espace de 2% de chaque côté (rappel : 2 colonnes, donc 2% sur la colonne de gauche et 2% sur la colonne de droite). */
     margin-right: 1.1em;
 }
+
+.wrappro {
+    background-image: url(../img/simplon-banner_resp.jpg);
+    background-repeat: no-repeat;
 }
 
-
-
-
-
-
+}
 

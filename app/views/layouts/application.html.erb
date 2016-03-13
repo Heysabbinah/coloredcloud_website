@@ -3,6 +3,9 @@
 <head>
   <title>Ccprosite</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "style"%>
+  <%= stylesheet_link_tag "bootstrap"%>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -28,17 +31,18 @@
                         <li><%=link_to 'projet', projet_path%></li>
 
                         <li><a href="contact.html" id="contact">Contact</a></li>
-                       <li>
+                       <!-- <li>
                             <a href="#" id="reseaux">Social</a>
                             <ul class="sub">
                                 <li><a href="" target="_blank" id="twitter"></a></li>
                             </ul>                               
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
              </div><!-- #menu -->
         </div><!-- #header -->
     </div><!-- #row-->
+  </div><!-- #container-->
 <%= yield %>
 
 </body>

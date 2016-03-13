@@ -1595,8 +1595,8 @@ pre code {
 
 @media (max-width: 700px) { /* -----------------TAILLE XS :SM----bloc container -----------------*/
   .container {
-    padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
   }
 }
 
