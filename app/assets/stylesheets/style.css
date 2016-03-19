@@ -139,7 +139,39 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     background-image: url(../img/simplon-banner.jpg);
     background-repeat: no-repeat;
 }
+.wrapdamart{
+    
+    height: 300px;
+    background-image: url(../img/damart-banner.jpg);
+    background-repeat: no-repeat;
+}
 
+.wrapidentity{
+    
+    height: 300px;
+    background-image: url(../img/identity_banner.png);
+    background-repeat: no-repeat;
+}
+
+.wrapnobla{
+    
+    height: 300px;
+    background-image: url(../img/nobla_banner.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+}
+
+.wrapsens{
+    
+    height: 300px;
+    background-image: url(../img/plaisir_banner.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+}
+
+.nobla {
+    margin-right: 5%;
+}
 
 .intro {
     font-family: "avant-garde", sans-serif;
@@ -167,13 +199,24 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
 #title {
     font-size: 3em;
     color: #c04c49;
-
 }
 
 .projet {
     /*float: left;*/
     margin-right: 4%;
+    margin-bottom: 2%;
+}
 
+.pictures {
+    margin-bottom: 3%;
+}
+
+.firstpicture {
+    margin-right: 1.2%;
+}
+
+#textpres {
+    font-size: 4em;
 }
 
 .visuel {
@@ -265,9 +308,18 @@ h2 {
     padding: 2%;
 }
 
+.content {
+
+}
+
 .infos { /*----- 3 blocs infos -----*/
    background-color: #1A1A1A;
+   margin-right: 1.2em;
+   padding: 12px;
+}
 
+.infos img {
+    padding: 10px;
 }
 
 #perso { /* encart de presentation sur trois colonne */
@@ -276,6 +328,17 @@ h2 {
     /*padding: 30px;*/
     overflow: hidden;
     /*margin-bottom: 35px;*/
+}
+
+h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #10f88d;
+    border-top: 5px solid #10f88d;
+    border-bottom: 2px solid #10f88d;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 13px;
 }
 
 h3 {
@@ -288,17 +351,20 @@ h3 {
     margin-bottom: 60px;
     overflow: hidden; 
     margin-top: 3%;
+    background-color: #1A1A1A;
 }
 
 .banner_footer {
     background-color: #0d0d0d;
-    height: 50px;
+    height: 70px;
     text-align: center;
+    padding: 5px;
 }
 
 .footer {
     background: #1A1A1A;
-    height: 100px;
+    height: 110px;
+    padding: 10px;
 }
 
 .footer ul {
@@ -317,6 +383,7 @@ h3 {
     padding: 1% 3%;
     float: left;
     overflow: hidden;
+
 }
 
 ul#menu_footer {
@@ -351,7 +418,7 @@ ul#reseaux_footer {
     width: 960px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
-    margin-bottom: 50%;
+    margin-bottom: 5%;
 }
  
 .clear {
@@ -662,7 +729,19 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
 
 .wrappro {
     background-image: url(../img/simplon-banner_resp.jpg);
-    background-repeat: no-repeat;
+}
+.wrapdamart {
+    background-image: url(../img/damart-banner_resp.jpg);
+}
+.wrapidentity {
+    background-image: url(../img/identity_banner_respo.png);
+}
+.wrapnobla {
+    background-image: url(../img/nobla_banner_respo.png);
+}
+.wrapsens{
+    background-image: url(../img/plaisirdessens_banner_respo.png);
+
 }
 
 }

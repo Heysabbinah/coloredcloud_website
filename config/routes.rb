@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   get 'projet' => 'static#projets'
   get 'oxyghem' => 'static#oxyghem'
   get 'simplon' => 'static#simplon'
+  get 'damart' => 'static#damart'
+  get 'actionboxe' => 'static#actionboxe'
+  get 'identity' => 'static#identity'
+  get 'nobleart' => 'static#nobleart'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
