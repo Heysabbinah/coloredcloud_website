@@ -65,3 +65,5 @@ end
 
 gem 'flipclockjs-rails', '~> 0.7.7'
 gem 'best_in_place', '~> 3.0.1'
+gem 'mail_form'
+gem 'simple_form'

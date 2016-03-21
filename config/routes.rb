@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :newsletters
   get 'static/pages'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -13,6 +14,8 @@ Rails.application.routes.draw do
   get 'actionboxe' => 'static#actionboxe'
   get 'identity' => 'static#identity'
   get 'nobleart' => 'static#nobleart'
+  get 'plaisir' => 'static#plaisirsens'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
