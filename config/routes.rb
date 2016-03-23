@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static#index'
   get 'projet' => 'static#projets'
+  get 'contact' => 'static#contact'
   get 'oxyghem' => 'static#oxyghem'
   get 'simplon' => 'static#simplon'
   get 'damart' => 'static#damart'
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
   get 'identity' => 'static#identity'
   get 'nobleart' => 'static#nobleart'
   get 'plaisir' => 'static#plaisirsens'
+  get 'taillefine' => 'static#taillefinefiz'
   
 
   # Example of regular route:
