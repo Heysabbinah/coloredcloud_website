@@ -153,6 +153,13 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     background-repeat: no-repeat;
 }
 
+.wrapaction{
+    
+    height: 300px;
+    background-image: url(../img/actionboxe-banner.jpg);
+    background-repeat: no-repeat;
+}
+
 .wrapnobla{
     
     height: 300px;
@@ -165,6 +172,14 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     
     height: 300px;
     background-image: url(../img/plaisir_banner.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+}
+
+.wrapfiz{
+    
+    height: 300px;
+    background-image: url(../img/taillefine-banner.jpg);
     background-repeat: no-repeat;
     margin-bottom: 5%;
 }
@@ -744,5 +759,13 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
 
 }
 
+.wrapaction{
+    background-image: url(../img/actionboxe-banner_resp.jpg);
+
+}
+.wrapfiz{
+    background-image: url(../img/taillefine-banner_resp.jpg);
+
+}
 }
 

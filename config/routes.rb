@@ -15,8 +15,8 @@ Rails.application.routes.draw do
   get 'actionboxe' => 'static#actionboxe'
   get 'identity' => 'static#identity'
   get 'nobleart' => 'static#nobleart'
-  get 'plaisir' => 'static#plaisirsens'
-  get 'taillefine' => 'static#taillefinefiz'
+  get 'sens' => 'static#sens'
+  get 'taillefinefiz' => 'static#taillefinefiz'
   
 
   # Example of regular route:
