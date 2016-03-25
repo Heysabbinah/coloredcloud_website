@@ -3,9 +3,10 @@ class NewslettersController < ApplicationController
 
   # GET /newsletters
   # GET /newsletters.json
-  def index
-    @newsletters = Newsletter.all
-  end
+
+  # def index // ici efface comme cela personne ne peut voir les /newsletters lists
+  #   @newsletters = Newsletter.all
+  # end
 
   # GET /newsletters/1
   # GET /newsletters/1.json
