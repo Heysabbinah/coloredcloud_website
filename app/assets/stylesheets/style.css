@@ -47,7 +47,7 @@ table {
     border-spacing: 0;
 }
 
-/* -------------rest ----------*/
+/* -------------fin rest ----------*/
 
 body {
 background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
@@ -60,7 +60,8 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     padding-top: 24px;
 }
 
-/* ///////////////////////// mail FORM //////////////////////////////
+/* ///////////////////////// mail FORM //////////////////////////////*/
+
 .hidden { display: none; }
 
 /*flash*/
@@ -92,7 +93,20 @@ border-color: #d6e9c6;
 color: #468847;
 text-align: left;
 }
+
+.contact {
+    background-color: #1A1A1A;
+    padding: 3%;
+}
+
+h5 {
+    font-size: 2em !important;
+    color: white !important;
+}
+
  /* /////////// fin mail form styling //////////// */
+
+
 
 #container {
     width: 960px;
@@ -367,8 +381,65 @@ h2 {
    padding: 12px;
 }
 
+.infos2 { /*----- 3 blocs infos -----*/
+   margin-top: 20px;
+   margin-right: 1.2em;
+
+}
+
+
+ /*---------------hover bloc reseaux -----------*/
+
+/*-behance--*/
+
+.hover12 figure {
+    background-image: url(../img/behance_hover.jpg);
+}
+.hover12 figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+    opacity: .1;
+}
+
+/*-tumblr--*/
+
+.hover11 figure {
+    background-image: url(../img/tumblr_hover.jpg);
+}
+.hover11 figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover11 figure:hover img {
+    opacity: .1;
+}
+
+/*-facebook-*/
+
+.hover10 figure {
+    background-image: url(../img/facebook_hover.jpg);
+}
+.hover10 figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover10 figure:hover img {
+    opacity: .1;
+}
+
+/*----------------------------------------------*/
+
 .infos img {
     padding: 10px;
+}
+
+.newsletter {
+    padding: 30px;
 }
 
 #perso { /* encart de presentation sur trois colonne */
