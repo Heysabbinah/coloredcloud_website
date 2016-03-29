@@ -600,7 +600,7 @@ ul#reseaux_footer {
     overflow: hidden; /* Grâce à cette ligne, on évite les débordements, et surtout on cache l'état 0 des animations. */
     cursor: pointer;
     margin-bottom: 20px;
-    border: 3px solid #fff;*/ /* ici border de chque bloc du portfolio 
+    border: 3px solid #fff; /* ici border de chque bloc du portfolio 
     box-shadow: 0 0 10px rgba(0,0,0,.2); /* Permet d'ajouter une ombre portée légère, les paramètres dans l'ordre sont : x, y, portée, couleur. */
     transition: all .2s ease-in-out; /* Comme pour le menu, on ajoute la transition pour créer un easing sur nos animations. */
     -moz-transition: all .2s ease-in-out;
