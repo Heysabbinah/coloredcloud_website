@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="description" content="">
 
-        <title>portfolio cc</title>
+        <title>ColoredCloud</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Coloredcloud Graphic designer, webdesigner et développeur web à Lille. Création de sites internet. Design d'interfaces graphiques et ergonomiques. Voici mon portfolio où vous retrouverez tous mes projets, des news, ainsi qu'un formulaire pour me contacter." />
 		<meta name="keywords" content="web design, responsive, web development, développeur web" />
@@ -59,7 +59,7 @@
             </div><!-- bio -->
 </div><!--#row-->
 
-<!-- ///////////////////////////// row 2 ////////////////// -->
+<!-- ///////////////////////////// row 2 //////////////////////////////////// -->
 <div class="row">
     
     <div class="col-md-4 col-sm-12 col-xs-12 infos">
@@ -72,19 +72,57 @@
      <div class="col-md-4 col-sm-12 col-xs-12 infos">
         <div class="content">
                 <h4 class="gray">Telecharger mon cv</h4>
-                <img src="img/img_cv.png" alt="Telecharger mon cv"/>
+                <a href="img/cv_2016.pdf" target="_blank"><img src="img/img_cv.png" alt=""/></a>
+
+                   
         </div>
     </div>  
 
      <div class="col-md-4 col-sm-12 col-xs-12 infos">
         <div class="content">
                 <h4 class="gray">On reste en contact ?</h4>
-                <img src="img/encart_newsletter.jpg"  alt="Telecharger mon cv"/>
+                <div class="newsletter"
+                <%= form_for Newsletter.new do |f| %>
+                <%= f.label :email %><br>
+                <%= f.text_field :email %>
+                <%= f.submit %>
+                <% end %>
+            </div>
         </div>
     </div>    
 
 </div><!--#row-->
 
+<!-- ///////////////////////////// ROW 3 //////////////////////////////////// -->
+<div class="row">
+    
+    <div class="col-md-4 col-sm-12 col-xs-12 infos2">
+       <div class="hover12 column">
+        <div>
+            <a href="https://www.behance.net/sasabrina" target="_blank"><figure><img src="img/behance.jpg" /></figure></a>
+            
+        </div> 
+</div><!--hover-->
+</div><!--col-->
+
+<div class="col-md-4 col-sm-12 col-xs-12 infos2">
+       <div class="hover11 column">
+        <div>
+            <a href="http://www.coloredcloud.fr" target="_blank"><figure><img src="img/tumblr.jpg" /></figure></a>
+           
+        </div> 
+</div><!--hover-->
+</div><!--col-->
+
+<div class="col-md-4 col-sm-12 col-xs-12 infos2">
+       <div class="hover10 column">
+        <div>
+            <a href="https://github.com/Heysabbinah" target="_blank"><figure><img src="img/github.jpg" /></figure></a>
+            
+        </div> 
+</div><!--hover-->
+</div><!--col-->
+</div><!--#row-->
 
 <!-- ///////////////////////////////////// FOOTER ///////////////////////////////-->
 <div id="conteneur_footer">
@@ -98,39 +136,27 @@
     <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-4 footer"> 
                     <ul id="contact">
-                        <li class="tel">00 00 00 00 00</li>
+                        <li class="tel">06 50 07 59 52</li>
                         <li class="mail">contact@coloredcloud.fr</li>
                     </ul>
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-4 footer">
-                         <ul id="reseaux_footer">
-                            <li><a href="https://www.facebook.com/Coloredcloud-Atelier-graphique-328157747247/?fref=ts" target="_blank" id="facebook_footer"></a></li>
-                            <li><a href="http://www.viadeo.com/fr/profile/stratis.bakas" target="_blank" id="viadeo_footer"></a></li>
-                            <li><a href="http://www.linkedin.com/pub/stratis-bakas/32/771/439" target="_blank" id="linkedin_footer"></a></li>
-                            <li><a href="http://www.behance.net/stratisbakas" target="_blank" id="behance_footer"></a></li>
-                        </ul>
+                         
             </div>
 
              <div class="col-md-4 col-sm-4 col-xs-4 footer">
                         <ul id="menu_footer">
-                            <li><a href="index.html">Accueil</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="projets.html">Projets</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="http://www.webdesignweb.fr" target="_blank">Blog</a></li>
+                            
+                            <li><%=link_to 'Home', root_path%></li>
+                            <li><%=link_to 'projets', projets_path%></li>
+                            <li><%=link_to 'contact', contacts_path%></li>
+                            <li><a href="http://www.coloredcloud.fr" target="_blank">Blog</a></li>
                         </ul>
             </div>
-
-
-
                 </div><!-- .bloc_footer -->
     </div><!--#footer -->
-
-
 </div><!--#container_footer -->
-
-
 </div><!-- #container -->
 
 <!-- script -->
@@ -142,5 +168,9 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/npm.js"></script>
 <!--#script -->
+
 </body>
 </html>
+
+
+

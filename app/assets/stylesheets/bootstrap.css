@@ -130,6 +130,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+  margin-top: 14px;
 }
 button[disabled],
 html input[disabled] {
@@ -1092,9 +1093,11 @@ input,
 button,
 select,
 textarea {
+  text-align: left;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin-top: 3%;
 }
 a {
   color: #337ab7;
@@ -2519,11 +2522,13 @@ legend {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
-label {
+label { /*--------------------text label message contact form ----*/
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  color: #20fa96;
+  font-size: 1em;
+  margin-right: 1.2em;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -3130,9 +3135,9 @@ fieldset[disabled] .btn-default.focus {
   background-color: #333;
 }
 .btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  color: white; /*----------------- ici text du btn envoyer ----*/
+  background-color: gray;
+  border-color: gray;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -3142,8 +3147,8 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #20fa96;
+  border-color: #20fa96;
 }
 .btn-primary:active,
 .btn-primary.active,

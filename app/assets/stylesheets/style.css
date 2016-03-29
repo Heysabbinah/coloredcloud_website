@@ -47,7 +47,7 @@ table {
     border-spacing: 0;
 }
 
-/* -------------rest ----------*/
+/* -------------fin rest ----------*/
 
 body {
 background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
@@ -59,6 +59,54 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     border-top: 4px solid #00cbcb;
     padding-top: 24px;
 }
+
+/* ///////////////////////// mail FORM //////////////////////////////*/
+
+.hidden { display: none; }
+
+/*flash*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.contact {
+    background-color: #1A1A1A;
+    padding: 3%;
+}
+
+h5 {
+    font-size: 2em !important;
+    color: white !important;
+}
+
+ /* /////////// fin mail form styling //////////// */
+
+
 
 #container {
     width: 960px;
@@ -153,6 +201,13 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     background-repeat: no-repeat;
 }
 
+.wrapaction{
+    
+    height: 300px;
+    background-image: url(../img/actionboxe-banner.jpg);
+    background-repeat: no-repeat;
+}
+
 .wrapnobla{
     
     height: 300px;
@@ -165,6 +220,14 @@ background: #1A1A1A url(../img/bck.jpg) no-repeat center center fixed;
     
     height: 300px;
     background-image: url(../img/plaisir_banner.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+}
+
+.wrapfiz{
+    
+    height: 300px;
+    background-image: url(../img/taillefine-banner.jpg);
     background-repeat: no-repeat;
     margin-bottom: 5%;
 }
@@ -318,8 +381,65 @@ h2 {
    padding: 12px;
 }
 
+.infos2 { /*----- 3 blocs infos -----*/
+   margin-top: 20px;
+   margin-right: 1.2em;
+
+}
+
+
+ /*---------------hover bloc reseaux -----------*/
+
+/*-behance--*/
+
+.hover12 figure {
+    background-image: url(../img/behance_hover.jpg);
+}
+.hover12 figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+    opacity: .1;
+}
+
+/*-tumblr--*/
+
+.hover11 figure {
+    background-image: url(../img/tumblr_hover.jpg);
+}
+.hover11 figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover11 figure:hover img {
+    opacity: .1;
+}
+
+/*-facebook-*/
+
+.hover10 figure {
+    background-image: url(../img/github_hover.jpg);
+}
+.hover10 figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover10 figure:hover img {
+    opacity: .1;
+}
+
+/*----------------------------------------------*/
+
 .infos img {
     padding: 10px;
+}
+
+.newsletter {
+    padding: 30px;
 }
 
 #perso { /* encart de presentation sur trois colonne */
@@ -458,7 +578,7 @@ ul#reseaux_footer {
 }
  
 .portfolio .tri ul li:hover {
-    color: #888;
+    color: #black;
 }
  
 .portfolio .tri ul li.active {
@@ -480,7 +600,7 @@ ul#reseaux_footer {
     overflow: hidden; /* Grâce à cette ligne, on évite les débordements, et surtout on cache l'état 0 des animations. */
     cursor: pointer;
     margin-bottom: 20px;
-    /*border: 3px solid #fff;*/ /* ici border de chque bloc du portfolio */
+    border: 3px solid #fff;*/ /* ici border de chque bloc du portfolio 
     box-shadow: 0 0 10px rgba(0,0,0,.2); /* Permet d'ajouter une ombre portée légère, les paramètres dans l'ordre sont : x, y, portée, couleur. */
     transition: all .2s ease-in-out; /* Comme pour le menu, on ajoute la transition pour créer un easing sur nos animations. */
     -moz-transition: all .2s ease-in-out;
@@ -744,5 +864,13 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
 
 }
 
+.wrapaction{
+    background-image: url(../img/actionboxe-banner_resp.jpg);
+
+}
+.wrapfiz{
+    background-image: url(../img/taillefine-banner_resp.jpg);
+
+}
 }
 

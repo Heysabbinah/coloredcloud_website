@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :newsletters
+  match '/contacts',     to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   get 'static/pages'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,14 +9,19 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static#index'
-  get 'projet' => 'static#projets'
+  get 'projets' => 'static#projets'
+  get 'contact' => 'static#contact'
   get 'oxyghem' => 'static#oxyghem'
   get 'simplon' => 'static#simplon'
   get 'damart' => 'static#damart'
   get 'actionboxe' => 'static#actionboxe'
   get 'identity' => 'static#identity'
   get 'nobleart' => 'static#nobleart'
+  get 'sens' => 'static#sens'
+  get 'taillefinefiz' => 'static#taillefinefiz'
 
+  
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
