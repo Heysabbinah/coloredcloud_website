@@ -3,7 +3,8 @@
     <div class="contact">
   <h5>Laissez moi un message</h5>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+  <%= simple_form_for @contact, :url => contacts_path(@contact), :html => {:method => post}, :class => 'form-horizontal' do |f| %>
+  
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
     <%= f.input :message, :as => :text, :required => true %>
@@ -38,11 +39,7 @@
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-4 footer">
-                         <ul id="reseaux_footer">
-                            <li><a href="https://www.facebook.com/Coloredcloud-Atelier-graphique-328157747247/?fref=ts" target="_blank" id="facebook_footer"></a></li>
-                            <li><a href="" target="_blank" id="viadeo_footer"></a></li>
-                            <li><a href="" target="_blank" id="linkedin_footer"></a></li>
-                            <li><a href="" target="_blank" id="behance_footer"></a></li>
+                         <a href="" target="_blank" id="behance_footer"></a></li>
                         </ul>
             </div>
 
@@ -61,14 +58,5 @@
 </div><!--#container_footer -->
 </div><!-- #container -->
 
-<!-- script -->
-<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="js/supersized.core.3.2.1.js"></script>
-        <script type="text/javascript" src="js/supersized.core.3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/tri.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/npm.js"></script>
-<!--#script -->
 </body>
 </html>
