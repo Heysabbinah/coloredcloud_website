@@ -872,5 +872,43 @@ Par contre, si on a 2000 (ok j'exagère) items, comment faire ? Et bien grâce a
     background-image: url(../img/taillefine-banner_resp.jpg);
 
 }
+
+ /*---------------hover bloc reseaux -----------*/
+
+/*-behance--*/
+
+.hover12 figure {
+    display: none;
+}
+.hover12 figure img {
+    display: none;
+}
+.hover12 figure:hover img {
+    display: none;
+}
+
+/*-tumblr--*/
+
+.hover11 figure {
+    display: none;
+}
+.hover11 figure img {
+    display: none;
+}
+.hover11 figure:hover img {
+    opacity: .1;
+}
+
+/*-facebook-*/
+
+.hover10 figure {
+    display: none;
+}
+.hover10 figure img {
+    display: none;
+}
+.hover10 figure:hover img {
+    display: none;
+}
 }
 
