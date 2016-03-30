@@ -3,8 +3,7 @@
     <div class="contact">
   <h5>Laissez moi un message</h5>
 
-  <%= simple_form_for @contact, :url => contacts_path(@contact), :html => {:method => post}, :class => 'form-horizontal' do |f| %>
-  
+  <%= simple_form_for @contact, :url => contacts_path do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
     <%= f.input :message, :as => :text, :required => true %>
@@ -39,8 +38,7 @@
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-4 footer">
-                         <a href="" target="_blank" id="behance_footer"></a></li>
-                        </ul>
+                        
             </div>
 
              <div class="col-md-4 col-sm-4 col-xs-4 footer">
