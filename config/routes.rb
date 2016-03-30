@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :newsletters
-  match '/contacts',     to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
   get 'static/pages'
 
