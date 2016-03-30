@@ -13,8 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap-sprockets
-//= require supersized.core.3.2.1
-//= require supersized.core.3.2.1.min
 //= require_tree .
 
