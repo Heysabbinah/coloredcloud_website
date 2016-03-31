@@ -7,11 +7,11 @@ def create
 	if @lead.save
 		
 	#so it redirect to root_path
-	    redirect_to root_path, notice: "Successfully send" 
+	    redirect_to root_path, notice: "Vous êtes maintenant inscrit à la newsletter !" 
 	    
 	#ici quand message missing template eror
     else
-    	redirect_to root_path, alert: "Failed to save" 
+    	redirect_to root_path, alert: "Erreur d'envoie !" 
     end
 
 end
