@@ -3,19 +3,17 @@ def create
 	#capture the informations from the params save it to the lead
 	@lead = Lead.new lead_params
 	#make sur to save it 
-	respond_to do |format|
 		
 	if @lead.save
-		cookies[:saved_lead] = true
+		
 	#so it redirect to root_path
-	    format.html { redirect_to root_path }
-	    format.js
+	    redirect_to root_path, notice: "Successfully send" 
+	    
 	#ici quand message missing template eror
     else
-    	format.htlm { redirect_to root_path, alert: "failed to save" }
+    	redirect_to root_path, alert: "Failed to save" 
     end
 
-end
 end
 
 private
@@ -23,5 +21,4 @@ private
   def lead_params
 	params.require(:lead).permit(:email, :statut) #strong parameters
   end
-end
 end

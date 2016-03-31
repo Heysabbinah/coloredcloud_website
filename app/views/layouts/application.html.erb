@@ -13,10 +13,10 @@
 
 <div class="container">
   <!-- ici on met les flash message pr la newsletter -->
-  <% if flash[:notice] %> <!--ou juste notice autre synthaxe-->
+  <% if notice %> <!--ou juste notice autre synthaxe-->
       <%= notice %>
    <% end %>
-   <% if flash[:alert] %>
+   <% if notice %>
       <%= alert %>
    <% end %>
 

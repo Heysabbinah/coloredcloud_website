@@ -53,35 +53,23 @@
 
 <!-- ///////////////////////////// row 2 //////////////////////////////////// -->
 <div class="row">
-    
-    <div class="col-md-4 col-sm-12 col-xs-12 infos">
-        <div class="content">
-                <h4 class="gray">Mes compétences</h4>
-                <img src="img/graphique_competences.jpg" alt="Telecharger mon cv"/>
-        </div>
-    </div>
+
+
 
      <div class="col-md-4 col-sm-12 col-xs-12 infos">
-        <div class="content">
-                <h4 class="gray">Telecharger mon cv</h4>
-                <a href="img/cv_2016.pdf" target="_blank"><img src="img/img_cv.png" alt=""/>
-                </div>
-    </div>  
-
-     <div class="col-md-4 col-sm-12 col-xs-12 infos">
-        <div class="content">
+        
                <h4 class="gray">Telecharger mon cv</h4>
 
                <% if cookies[:saved_lead] %> <!-- memorise le lead instead of remind the form each time -->
                 Thanks for signing up !
                 <% else %> <!-- otherwize if no cookies -->
-                <%= form_for Lead.new, remote: true do |f| %>
+                <%= form_for Lead.new do |f| %>
                 <%= f.email_field :email, placeholder: "Email" %>
                 <%= f.select :statut, ["professionnel" , "particulier"], prompt: "statut" %>
                 <%= f.submit %>
                 <% end %>
                 <% end %>
-            </div>
+           
     </div>  
 
 </div><!--#row-->
