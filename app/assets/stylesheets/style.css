@@ -438,8 +438,10 @@ h2 {
     padding: 10px;
 }
 
-.newsletter {
-    padding: 30px;
+.cont {
+    font-size: 1.2em;
+    color: white;
+    font-weight: normal;
 }
 
 #perso { /* encart de presentation sur trois colonne */

@@ -10,7 +10,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="container">
+  <!-- ici on met les flash message pr la newsletter -->
+  <% if flash[:notice] %> <!--ou juste notice autre synthaxe-->
+      <%= notice %>
+   <% end %>
+   <% if flash[:alert] %>
+      <%= alert %>
+   <% end %>
+
 
     <!-- ///////////////////////////// container header ////////////////// -->
 

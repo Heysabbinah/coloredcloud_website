@@ -74,10 +74,16 @@
 
      <div class="col-md-4 col-sm-12 col-xs-12 infos">
         <div class="content">
-                <%= form_for @lead do |f| %>
+               <h4 class="gray">Telecharger mon cv</h4>
+
+               <% if cookies[:saved_lead] %> <!-- memorise le lead instead of remind the form each time -->
+                Thanks for signing up !
+                <% else %> <!-- otherwize if no cookies -->
+                <%= form_for Lead.new, remote: true do |f| %>
                 <%= f.email_field :email, placeholder: "Email" %>
-                <%= f.text_field :statut, placeholder: "Agence" %>
+                <%= f.select :statut, ["professionnel" , "particulier"], prompt: "statut" %>
                 <%= f.submit %>
+                <% end %>
                 <% end %>
             </div>
     </div>  
@@ -149,6 +155,10 @@
     </div><!--#footer -->
 </div><!--#container_footer -->
 </div><!-- #container -->
+
+<script>
+
+</script>
 
 </body>
 </html>

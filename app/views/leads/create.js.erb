@@ -1,0 +1,5 @@
+<% if @lead.errors.any? %>
+alert("please fill out the entire form")
+<% else %>
+$("#new_lead").hide()
+<% end %>
