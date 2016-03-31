@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :leads #ici pr relier la news a l'app rails
   resources "contacts", only: [:new, :create]
   get 'static/pages'
 
@@ -8,7 +9,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static#index'
   get 'projets' => 'static#projets'
-  get 'contact' => 'static#contact'
   get 'oxyghem' => 'static#oxyghem'
   get 'simplon' => 'static#simplon'
   get 'damart' => 'static#damart'

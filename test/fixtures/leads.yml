@@ -2,6 +2,8 @@
 
 one:
   email: MyString
+  statut: MyString
 
 two:
   email: MyString
+  statut: MyString

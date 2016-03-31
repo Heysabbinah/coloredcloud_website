@@ -68,15 +68,19 @@
      <div class="col-md-4 col-sm-12 col-xs-12 infos">
         <div class="content">
                 <h4 class="gray">Telecharger mon cv</h4>
-                <a href="img/cv_2016.pdf" target="_blank"><img src="img/img_cv.png" alt=""/></a>
-
-                   
-        </div>
+                <a href="img/cv_2016.pdf" target="_blank"><img src="img/img_cv.png" alt=""/>
+                </div>
     </div>  
 
      <div class="col-md-4 col-sm-12 col-xs-12 infos">
-        
-    </div>    
+        <div class="content">
+                <%= form_for @lead do |f| %>
+                <%= f.email_field :email, placeholder: "Email" %>
+                <%= f.text_field :statut, placeholder: "Agence" %>
+                <%= f.submit %>
+                <% end %>
+            </div>
+    </div>  
 
 </div><!--#row-->
 
