@@ -11,7 +11,7 @@ def create
 	    
 	#ici quand message missing template eror
     else
-    	redirect_to root_path, alert: "Erreur d'envoie !" 
+    	redirect_to root_path, alert: "Erreur...recommencez !" 
     end
 
 end
