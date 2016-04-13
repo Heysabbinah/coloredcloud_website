@@ -6,12 +6,13 @@ def create
 		
 	if @lead.save
 		
-	#so it redirect to root_path
+	#it redirect to root_path
+	#ici message notice pour la newsletter style bootstrap style css dans le container 
 	    redirect_to root_path, notice: "Vous êtes maintenant inscrit à la newsletter !" 
 	    
 	#ici quand message missing template eror
     else
-    	redirect_to root_path, alert: "Erreur...recommencez !" 
+    	redirect_to root_path, alert: "Erreur...recommencez !" #ici message alerte style bootstrap pour la newsletter
     end
 
 end
